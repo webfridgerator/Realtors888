@@ -1,0 +1,17 @@
+REALTORS888 — LOGO INTEGRATION UPDATE
+
+This package has been updated using the supplied REALTORS888 final logo PDF and Brand Identity Kit v2.
+
+CHANGES MADE
+- Replaced the old text/888 header and footer logo lockups across all 10 HTML pages with the new architectural twin-column symbol and a coordinated REALTORS / 888 wordmark.
+- Added a transparent PNG symbol asset at assets/images/brand/realtors888-symbol.png.
+- Added the full transparent logo artwork at assets/images/brand/realtors888-full-logo.png for other placements and collateral.
+- Added favicon.png and linked it from all pages.
+- Updated the website palette to Deep Forest Green #1A3A2A, Warm Terracotta Gold #C28A4B and Warm Parchment Cream #F4EFE2.
+- Kept the existing page content, navigation, banner assets, WhatsApp code, forms and other functionality intact.
+
+IMPLEMENTATION NOTES
+- The supplied final logo PDF contains a raster artwork image, not an embedded vector logo. The PNG assets were extracted from that supplied artwork and background-removed for web use. They are transparent PNG files, not editable vector artwork.
+- The header uses the symbol alongside a matching HTML wordmark so the identity fits the existing horizontal navigation without making the header excessively tall.
+- The full lockup PNG is included for use where a vertical logo is appropriate.
+- Please test the supplied ZIP on staging before deployment, especially desktop/mobile header spacing and favicon display. Do not replace the supplied artwork with a different logo.

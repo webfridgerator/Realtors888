@@ -44,3 +44,12 @@ TEST CHECKLIST
 [ ] Press Send and confirm the message arrives in WhatsApp Business
 [ ] Test all WhatsApp buttons and mobile navigation
 [ ] Review all placeholders and legal pages before publishing
+
+
+RESPONSIVE BANNERS UPDATE
+- Campaign banner images are in assets/images/banners/.
+- Each campaign has a -desktop.webp and -mobile.webp version.
+- Homepage now has the hero and four service banners; land/commercial banners are on Properties, interior banner on Interiors, and property-care banner on Property Care.
+- Banner buttons link to the relevant site pages.
+- Keep both versions together when uploading to Vercel; CSS switches the image at 780px.
+- The source was the supplied five-panel campaign artwork; the desktop files retain its designed text while mobile files use photo crops with responsive HTML text.

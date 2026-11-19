@@ -4,6 +4,6 @@
    Example format for India: 919876543210
 */
 window.REALTORS888_CONFIG = {
-  whatsappNumber: "919900077888",
+  whatsappNumber: "91XXXXXXXXXX",
   businessName: "REALTORS 888"
 };

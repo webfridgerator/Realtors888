@@ -1,0 +1,19 @@
+REALTORS888 — RESPONSIVE BANNER UPDATE FOR SALMAN
+
+Files in this package
+1) REALTORS888_website_with_responsive_banners.zip — complete updated static website source.
+2) REALTORS888_banner_images_desktop_mobile.zip — 10 WebP banner assets: five desktop + five mobile versions.
+
+How to use the website package
+- Back up the current Vercel project first.
+- Unzip this package and use the folder REALTORS888_final_site as the updated static site root.
+- Preserve the assets/images/banners/ folder and all ten WebP files.
+- The homepage now includes the hero plus Land & Investment, Commercial Property Solutions, Interior Design & Renovation, and Property Care banners.
+- The Properties page includes land and commercial banners; Interiors includes the interior banner; Property Care includes its support banner.
+- Desktop shows the supplied designed banner artwork. On screens 780px and below, CSS switches to the matching mobile photo crop and renders live HTML headings and buttons.
+- Test on desktop, tablet, and phone before deploying. Verify every CTA and the WhatsApp shortcut.
+
+Important
+- The desktop images are crops from the supplied composite campaign image, so their typography and CTA artwork are baked into the image. The mobile variants use photo crops with live HTML text/buttons.
+- Confirm exact contact settings in assets/js/config.js before deployment.
+- This package updates the previous WhatsApp-ready starter source; it does not modify the live Vercel site automatically.
