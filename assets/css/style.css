@@ -71,3 +71,18 @@ main>.visual-banner{margin:10px auto;}
  .visual-banner-stack .visual-banner{min-height:390px;}
 }
 @media(min-width:781px) and (max-width:1100px){.visual-banner-copy{max-width:52%;}.visual-banner--home .visual-banner-copy{max-width:49%;}.visual-banner-stack .visual-banner{min-height:230px;}}
+
+
+/* Desktop banner fix: preserve the complete designed artwork instead of cropping it */
+@media(min-width:781px){
+ .visual-banner,.visual-banner--home,.visual-banner-stack .visual-banner{min-height:0;height:auto;}
+ .visual-banner-media{position:relative;inset:auto;z-index:0;width:100%;}
+ .visual-banner-media img{width:100%;height:auto;object-fit:contain;object-position:center;}
+ .visual-banner:after{display:none;}
+}
+/* Mobile keeps the portrait photo crop and live text overlay */
+@media(max-width:780px){
+ .visual-banner-media{position:absolute;inset:0;z-index:-2;width:auto;height:auto;}
+ .visual-banner-media img{width:100%;height:100%;object-fit:cover;object-position:center;}
+ .visual-banner:after{display:block;}
+}
