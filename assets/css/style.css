@@ -124,3 +124,14 @@ main>.visual-banner{margin:10px auto;}
 .visual-banner-feature-icon{display:grid;place-items:center;color:#d8b76d;flex:0 0 auto}
 .visual-banner-feature-icon .banner-icon{width:32px;height:32px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 @media(max-width:780px){.visual-banner-feature-icon .banner-icon{width:27px;height:27px}}
+
+
+/* Tablet banner feature strip: prevent icon/text collisions at narrower desktop widths */
+@media (min-width:781px) and (max-width:1100px){
+ .visual-banner-features{grid-template-columns:repeat(3,minmax(0,1fr));padding:12px 3%;align-items:stretch;}
+ .visual-banner-feature{flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:6px;padding:8px 10px;}
+ .visual-banner-feature-icon{width:32px;height:32px;}
+ .visual-banner-feature-icon .banner-icon{width:26px;height:26px;}
+ .visual-banner-feature strong{font-size:clamp(.72rem,.95vw,.82rem);line-height:1.25;white-space:normal;overflow-wrap:anywhere;}
+ .visual-banner-feature small{font-size:clamp(.62rem,.75vw,.7rem);line-height:1.3;white-space:normal;overflow-wrap:anywhere;}
+}
