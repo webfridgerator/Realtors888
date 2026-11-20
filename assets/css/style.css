@@ -98,3 +98,24 @@ main>.visual-banner{margin:10px auto;}
  .visual-banner-feature strong{display:block;font-family:Manrope,Arial,sans-serif;font-size:clamp(.72rem,1.05vw,.98rem);line-height:1.25;letter-spacing:0;}
  .visual-banner-feature small{display:block;color:rgba(255,255,255,.76);font-size:clamp(.62rem,.8vw,.76rem);line-height:1.25;margin-top:3px;}
 }
+
+
+/* Mobile banner feature strips: make the three service highlights visible on phones */
+@media(max-width:780px){
+ .visual-banner--home{min-height:650px;}
+ .visual-banner-stack .visual-banner{min-height:560px;}
+ .visual-banner-copy,.visual-banner--home .visual-banner-copy,.visual-banner-stack .visual-banner-copy{bottom:112px;}
+ .visual-banner-features{position:absolute;left:0;right:0;bottom:0;z-index:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding:12px 8px;background:linear-gradient(90deg,rgba(7,25,30,.96),rgba(7,25,30,.88));color:#fff;}
+ .visual-banner-feature{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;padding:4px 6px;min-width:0;border-right:1px solid rgba(255,255,255,.18);}
+ .visual-banner-feature:last-child{border-right:0;}
+ .visual-banner-feature-icon{width:30px;height:30px;flex:0 0 auto;display:grid;place-items:center;border:1px solid rgba(194,138,75,.7);border-radius:50%;color:#e4bb7e;font-size:16px;line-height:1;}
+ .visual-banner-feature strong{display:block;font-family:Manrope,Arial,sans-serif;font-size:.68rem;line-height:1.2;letter-spacing:0;}
+ .visual-banner-feature small{display:block;color:rgba(255,255,255,.76);font-size:.58rem;line-height:1.2;margin-top:2px;}
+}
+@media(max-width:480px){
+ .visual-banner--home{min-height:690px;}
+ .visual-banner-stack .visual-banner{min-height:590px;}
+ .visual-banner-copy,.visual-banner--home .visual-banner-copy,.visual-banner-stack .visual-banner-copy{bottom:116px;}
+ .visual-banner-feature strong{font-size:.64rem;}
+ .visual-banner-feature small{font-size:.55rem;}
+}
