@@ -119,3 +119,8 @@ main>.visual-banner{margin:10px auto;}
  .visual-banner-feature strong{font-size:.64rem;}
  .visual-banner-feature small{font-size:.55rem;}
 }
+
+/* Banner feature icons: consistent gold outline SVGs */
+.visual-banner-feature-icon{display:grid;place-items:center;color:#d8b76d;flex:0 0 auto}
+.visual-banner-feature-icon .banner-icon{width:32px;height:32px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:780px){.visual-banner-feature-icon .banner-icon{width:27px;height:27px}}
